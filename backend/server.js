@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 
 // Test Route
 app.get('/', (req, res) => {
-    res.send('Welcome to the Node.js Backend');
+    res.send('Welcome to the Node.js Backend 1.1');
 });
 
 // Function to test the database connection and create the 'course' table if it doesn't exist
@@ -137,5 +137,5 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, async () => {
     // Test the DB connection and create the table as soon as the server starts
     await testDbConnection();
-    console.log(`Server running on http://localhost:${PORT}`);
+    console.log(`Server running on 1.1 http://localhost:${PORT}`);
 });
