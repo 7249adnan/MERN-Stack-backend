@@ -134,8 +134,8 @@ app.put('/course/:id', async (req, res) => {
 
 // Start the Server
 const PORT = process.env.PORT || 80;
-app.listen(PORT, async () => {
-    // Test the DB connection and create the table as soon as the server starts
+app.listen(PORT, '0.0.0.0', async () => {
     await testDbConnection();
-    console.log(`Server running on 1.1 http://localhost:${PORT}`);
+    console.log(`Server running on http://0.0.0.0:${PORT}`);
 });
+
